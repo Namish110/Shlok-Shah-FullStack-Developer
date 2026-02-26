@@ -1,18 +1,18 @@
 export default function Footer() {
   return (
     <footer className="editorial-section section-alt">
-      <div className="max-w-6xl mx-auto footer-shell">
+      <div className="max-w-6xl mx-auto footer-shell px-6">
         <div className="glass-card footer-card">
           <div className="footer-grid">
             <div>
               <p className="section-kicker">Let's connect</p>
               <h3 className="footer-title">Shlok Shah</h3>
               <p className="text-muted mt-2">
-                Full Stack Developer focused on dependable, human-centered products.
+                Dot Net Developer focused on scalable enterprise products and reliable delivery.
               </p>
               <div className="footer-tags">
                 <span className="footer-tag">Open to work</span>
-                <span className="footer-tag">India</span>
+                <span className="footer-tag">Delhi, India</span>
                 <span className="footer-tag">Remote friendly</span>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function Footer() {
                   </svg>
                   LinkedIn
                 </a>
-                <a href="mailto:guptanamish11@gmail.com" className="footer-pill">
+                <a href="mailto:guptanamish11@gamail.com" className="footer-pill">
                   Email
                 </a>
               </div>
@@ -55,10 +55,8 @@ export default function Footer() {
 
           <div className="footer-divider" />
           <div className="footer-bottom">
-            <p className="footer-note">
-              Building with clarity, consistency, and a little flair.
-            </p>
-            <p className="text-muted text-xs">© 2026 Shlok Shah. All rights reserved.</p>
+            <p className="footer-note">Building with clarity, consistency, and performance.</p>
+            <p className="text-muted text-xs">(c) 2026 Shlok Shah. All rights reserved.</p>
           </div>
         </div>
       </div>

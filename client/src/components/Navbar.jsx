@@ -12,12 +12,6 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const toggleTheme = () => {
-    document.documentElement.classList.toggle("theme-alt");
-  };
-  const toggleGlass = () => {
-    document.documentElement.classList.toggle("glass-strong");
-  };
 
   return (
     <motion.nav
@@ -46,18 +40,6 @@ export default function Navbar() {
             >
               Menu
             </button>
-            <button
-              onClick={toggleTheme}
-              className="hidden sm:inline-flex rounded-full border border-soft px-4 py-2 text-xs uppercase tracking-[0.2em] text-muted hover:text-primary transition magnetic"
-            >
-              Alt Skin
-            </button>
-            <button
-              onClick={toggleGlass}
-              className="hidden sm:inline-flex rounded-full border border-soft px-4 py-2 text-xs uppercase tracking-[0.2em] text-muted hover:text-primary transition magnetic"
-            >
-              Blur
-            </button>
             <a
               href="/src/assets/resume.pdf"
               download="Shlok_Shah_Resume.pdf"
@@ -82,20 +64,6 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <div className="flex gap-2 pt-2">
-              <button
-                onClick={toggleTheme}
-                className="rounded-full border border-soft px-4 py-2 text-xs uppercase tracking-[0.2em] text-muted hover:text-primary transition magnetic"
-              >
-                Alt Skin
-              </button>
-              <button
-                onClick={toggleGlass}
-                className="rounded-full border border-soft px-4 py-2 text-xs uppercase tracking-[0.2em] text-muted hover:text-primary transition magnetic"
-              >
-                Blur
-              </button>
-            </div>
           </div>
         </div>
       </div>

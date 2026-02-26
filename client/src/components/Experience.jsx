@@ -1,35 +1,59 @@
 import { motion } from "framer-motion";
-import neonLines from "../assets/neon-lines.jpg";
 
 const experiences = [
   {
     role: "Dot Net Developer",
     company: "Dimension Groups",
-    time: "2025-Present",
+    time: "2025 - Present",
+    tags: ["Kaushambhi, Delhi", "BSE API", "Shriram API", "Frontend"],
     points: [
-      "Maintained and optimized company websites",
-      "Integrated BSE & Shriram Finance APIs",
-      "Improved UI responsiveness and security",
+      "Working as a Dot Net Developer on enterprise web applications.",
+      "Integrated BSE and Shriram finance APIs for bonds workflows.",
+      "Improved usability, performance, and day-to-day platform reliability.",
     ],
   },
   {
     role: "Dot Net Developer",
     company: "NEGD (NIC)",
-    time: "2024-2025",
+    time: "2025 - 2025",
+    tags: ["Remote", "React", ".NET MVC", "MySQL", "Swagger"],
     points: [
-      "Built React frontend using Material UI",
-      "Backend with .NET MVC and MySQL",
-      "API documentation with Swagger",
+      "Delivered portal features in coordination with NIC teams.",
+      "Built and integrated modules using React, .NET MVC, and MySQL.",
+      "Documented and validated API flows using Swagger and Postman.",
+    ],
+  },
+  {
+    role: "Full Stack Developer",
+    company: "Kding Blocks",
+    time: "2025 - 2025",
+    tags: ["Delhi", "Full Stack", "Web API", "SQL"],
+    points: [
+      "Built full-stack web modules with backend APIs and responsive frontend.",
+      "Implemented secure data flow and optimized query handling.",
+      "Collaborated with product and engineering teams for fast delivery.",
     ],
   },
   {
     role: "Dot Net Developer",
     company: "IREDA",
-    time: "2023-2024",
+    time: "2022 - 2025",
+    tags: ["Delhi", ".NET Core", "REST APIs", "SQL/NoSQL", "CI/CD"],
     points: [
-      "Built scalable databases",
-      "Developed REST APIs",
-      "Deployed using AWS and CI/CD pipelines",
+      "Developed and maintained .NET services for business-critical workflows.",
+      "Designed REST APIs and optimized SQL/NoSQL database operations.",
+      "Supported testing, debugging, and cloud-based CI/CD releases.",
+    ],
+  },
+  {
+    role: "Dot Net Developer",
+    company: "Vocman",
+    time: "2021 - 2022",
+    tags: ["Delhi", "ASP.NET", "SQL", "Support"],
+    points: [
+      "Contributed to .NET application features and bug-fix cycles.",
+      "Supported issue resolution and production stability improvements.",
+      "Worked with cross-functional teams on timely feature delivery.",
     ],
   },
 ];
@@ -37,46 +61,48 @@ const experiences = [
 export default function Experience() {
   return (
     <section id="experience" className="editorial-section px-6 section-alt">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_0.9fr] gap-6 items-center relative">
-        <div>
-          <p className="section-kicker">Experience</p>
-          <h2 className="section-title mt-4">Roles that shaped my craft</h2>
-          <svg className="divider-line" viewBox="0 0 140 18" aria-hidden="true">
-            <path d="M2 9 H138" />
-          </svg>
-        </div>
-        <svg className="section-svg" viewBox="0 0 140 44" aria-hidden="true">
-          <path d="M10 10 H70 M90 10 H130 M10 30 H50 M80 30 H130" />
-          <circle cx="10" cy="10" r="3" />
-          <circle cx="130" cy="30" r="3" />
+      <div className="max-w-6xl mx-auto exp-head">
+        <p className="section-kicker">Experience</p>
+        <h2 className="section-title mt-4">Career Timeline</h2>
+        <svg className="divider-line" viewBox="0 0 140 18" aria-hidden="true">
+          <path d="M2 9 H138" />
         </svg>
-        <div className="media-frame media-glow">
-          <img src={neonLines} alt="Systems engineering" className="tilt-media" />
-          <div className="media-caption">Reliability engineering • High availability</div>
-        </div>
       </div>
-      <div className="max-w-6xl mx-auto timeline space-y-5">
-        {experiences.map((e, i) => (
-          <motion.div
-            key={e.company}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="glass-card hover-card relative"
-          >
-            <div className="absolute -left-5 top-8 timeline-dot" />
-            <div className="flex justify-between items-center flex-wrap">
-              <h3 className="text-lg font-semibold">{e.company}</h3>
-              <span className="text-muted text-sm">{e.time}</span>
-            </div>
-            <p className="text-accent mt-1">{e.role}</p>
-            <ul className="list-disc list-inside text-muted mt-3 space-y-1">
-              {e.points.map((p) => (
-                <li key={p}>{p}</li>
-              ))}
-            </ul>
-          </motion.div>
-        ))}
+
+      <div className="max-w-6xl mx-auto exp-timeline">
+        <div className="exp-line" aria-hidden="true" />
+        {experiences.map((e, i) => {
+          const right = i % 2 === 1;
+          return (
+            <motion.article
+              key={`${e.company}-${e.time}`}
+              className={`exp-row ${right ? "right" : "left"}`}
+              initial={{ opacity: 0, y: 26 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: i * 0.08 }}
+            >
+              <div className="exp-time">{e.time}</div>
+              <div className="exp-node" aria-hidden="true">
+                <span />
+              </div>
+              <div className="exp-card glass-card">
+                <h3>{e.role}</h3>
+                <p className="exp-company">{e.company}</p>
+                <div className="exp-tags">
+                  {e.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+                <ul>
+                  {e.points.map((p) => (
+                    <li key={p}>{p}</li>
+                  ))}
+                </ul>
+                <p className="exp-link">Website Link</p>
+              </div>
+            </motion.article>
+          );
+        })}
       </div>
     </section>
   );

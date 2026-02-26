@@ -33,39 +33,39 @@ export default function About() {
 
   return (
     <section id="about" className="editorial-section px-6 section-alt">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-[1.2fr_0.8fr] gap-8 items-start relative">
+      <div className="max-w-6xl mx-auto about-layout relative">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="glass-card hover-card"
+          className="glass-card hover-card about-main"
         >
           <p className="section-kicker">About</p>
-          <h2 className="section-title mt-4">A builder with a product mindset</h2>
+          <h2 className="section-title mt-4">A performance-driven .NET developer</h2>
           <svg className="divider-line" viewBox="0 0 140 18" aria-hidden="true">
             <path d="M2 9 H138" />
           </svg>
           <p className="text-muted mt-4 leading-relaxed">
             Performance-driven .NET developer with 4+ years of experience in
-            full-stack development using ASP.NET MVC/Core, Web API, SQL, and modern
-            JS frameworks. I focus on clean architecture, reliable systems, and
-            interfaces that feel effortless to use.
+            full-stack web application design and development. Expertise in .NET,
+            ASP.NET MVC/Core, Web API, SQL, and modern JavaScript frameworks.
           </p>
           <p className="text-muted mt-4 leading-relaxed">
-            My workflow blends pragmatic engineering with thoughtful design to
-            ship scalable platforms that reduce complexity and unlock growth.
+            Proven track record in API integrations and database optimization,
+            delivering enterprise solutions aligned with business objectives.
+            Strong focus on clean code, DevOps, and agile execution.
           </p>
         </motion.div>
 
-        <svg className="section-svg" viewBox="0 0 140 44" aria-hidden="true">
+        <svg className="section-svg about-svg" viewBox="0 0 140 44" aria-hidden="true">
           <path d="M10 10 H70 M90 10 H130 M10 30 H50 M80 30 H130" />
           <circle cx="10" cy="10" r="3" />
           <circle cx="130" cy="30" r="3" />
         </svg>
-        <div className="grid gap-4">
+        <div className="about-side">
           <div className="media-frame media-glow">
             <img src={serverComponents} alt="Server infrastructure" className="tilt-media" />
-            <div className="media-caption">Infrastructure backbone • Secure systems</div>
+            <div className="media-caption">Infrastructure backbone - Secure systems</div>
           </div>
           <div className="glass-card hover-card">
             <p className="section-kicker">Highlights</p>
@@ -83,32 +83,32 @@ export default function About() {
               <div className="soft-border rounded-2xl px-4 py-4">
                 <div
                   className="text-2xl font-semibold gradient-text"
-                  data-target="18"
+                  data-target="5"
                   ref={(el) => (statRefs.current[1] = el)}
                 >
-                  18+
+                  05+
                 </div>
-                <div className="text-xs text-muted mt-2">Projects</div>
+                <div className="text-xs text-muted mt-2">Roles</div>
               </div>
               <div className="soft-border rounded-2xl px-4 py-4">
                 <div
                   className="text-2xl font-semibold gradient-text"
-                  data-target="6"
+                  data-target="2"
                   ref={(el) => (statRefs.current[2] = el)}
                 >
-                  06
+                  02
                 </div>
-                <div className="text-xs text-muted mt-2">Clients</div>
+                <div className="text-xs text-muted mt-2">Degrees</div>
               </div>
             </div>
           </div>
           <div className="glass-card hover-card">
             <p className="section-kicker">Focus</p>
             <div className="mt-4 flex flex-wrap gap-3 text-sm text-muted">
-              <span className="soft-border rounded-full px-4 py-2">API design</span>
-              <span className="soft-border rounded-full px-4 py-2">Security</span>
-              <span className="soft-border rounded-full px-4 py-2">UX polish</span>
-              <span className="soft-border rounded-full px-4 py-2">Performance</span>
+              <span className="soft-border rounded-full px-4 py-2">API Integration</span>
+              <span className="soft-border rounded-full px-4 py-2">SQL/NoSQL</span>
+              <span className="soft-border rounded-full px-4 py-2">DevOps</span>
+              <span className="soft-border rounded-full px-4 py-2">Agile/Scrum</span>
             </div>
           </div>
         </div>
@@ -116,3 +116,4 @@ export default function About() {
     </section>
   );
 }
+

@@ -63,7 +63,7 @@ export default function Hero() {
             transition={{ duration: 0.7 }}
           className="text-2xl md:text-4xl mt-4 text-muted"
         >
-          Full Stack Developer building resilient, cloud-native products
+          Dot Net Developer building scalable enterprise products
         </motion.h2>
         <div className="mt-4 flex items-center gap-2 text-xs text-muted">
           <span className="status-dot" />
@@ -75,8 +75,8 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="mt-6 text-muted max-w-xl"
           >
-            I design and ship production-grade apps with clean architecture, secure APIs,
-            and crisp user experiences across web and cloud.
+            Performance-driven .NET developer with 4+ years of full-stack experience
+            in ASP.NET MVC/Core, Web API, SQL, and modern JavaScript frameworks.
           </motion.p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -92,10 +92,10 @@ export default function Hero() {
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3 text-sm text-muted">
-            <span className="tech-pill">ASP.NET Core</span>
-            <span className="tech-pill">React + Vite</span>
-            <span className="tech-pill">SQL + Redis</span>
-            <span className="tech-pill">Azure + CI/CD</span>
+            <span className="tech-pill">C# / .NET Core</span>
+            <span className="tech-pill">ASP.NET MVC + Web API</span>
+            <span className="tech-pill">SQL + React</span>
+            <span className="tech-pill">AWS / Azure / CI/CD</span>
           </div>
           <div className="mt-6 terminal">
             <div className="terminal-header">
@@ -162,9 +162,9 @@ export default function Hero() {
         </div>
 
         <div className="absolute right-10 top-32 space-y-3 hidden xl:block">
-          <div className="hud-widget">CPU Load • 23%</div>
-          <div className="hud-widget">Memory • 68%</div>
-          <div className="hud-widget">Builds • Passing</div>
+          <div className="hud-widget">CPU Load - 23%</div>
+          <div className="hud-widget">Memory - 68%</div>
+          <div className="hud-widget">Builds - Passing</div>
         </div>
       </div>
 
@@ -193,3 +193,4 @@ export default function Hero() {
     </section>
   );
 }
+
