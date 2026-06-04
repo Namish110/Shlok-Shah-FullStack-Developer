@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import profileImg from "../assets/profile.jpg";
 
 export default function Hero() {
   useEffect(() => {
@@ -131,10 +130,12 @@ export default function Hero() {
             <div className="id-card tilt-card">
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src={profileImg}
+                  src="/profile.jpg"
                   alt="Shlok Shah"
                   className="h-56 sm:h-[260px] w-full object-cover object-top"
                   loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                 />
               </div>
               <div className="mt-4 text-center">

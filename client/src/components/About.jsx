@@ -64,7 +64,7 @@ export default function About() {
         </svg>
         <div className="about-side">
           <div className="media-frame media-glow">
-            <img src={serverComponents} alt="Server infrastructure" className="tilt-media" />
+            <img src={serverComponents} alt="Server infrastructure" className="tilt-media" loading="lazy" decoding="async" />
             <div className="media-caption">Infrastructure backbone - Secure systems</div>
           </div>
           <div className="glass-card hover-card">

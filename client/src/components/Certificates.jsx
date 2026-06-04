@@ -23,7 +23,7 @@ export default function Certificates() {
           <circle cx="130" cy="30" r="3" />
         </svg>
         <div className="media-frame media-glow certs-media">
-          <img src={abstractSwirl} alt="Security dashboard animation" className="tilt-media" />
+          <img src={abstractSwirl} alt="Security dashboard animation" className="tilt-media" loading="lazy" decoding="async" />
           <div className="media-caption">Security focus - Verified skills</div>
         </div>
       </div>

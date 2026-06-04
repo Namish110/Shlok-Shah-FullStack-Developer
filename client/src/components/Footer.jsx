@@ -22,7 +22,7 @@ export default function Footer() {
                 <a
                   href="https://github.com/Namish110"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="footer-pill"
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
@@ -33,7 +33,7 @@ export default function Footer() {
                 <a
                   href="https://www.linkedin.com/in/shlokshahdeveloper"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="footer-pill"
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">

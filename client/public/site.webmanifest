@@ -1,0 +1,9 @@
+{
+  "name": "Shlok Shah Portfolio",
+  "short_name": "Shlok Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050a12",
+  "theme_color": "#050a12",
+  "description": "Portfolio of Shlok Shah, a full-stack .NET developer building scalable enterprise web applications."
+}

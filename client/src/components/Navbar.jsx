@@ -7,6 +7,7 @@ const links = [
   { id: "skills", label: "Stack" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
+  { id: "faq", label: "FAQ" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -41,7 +42,7 @@ export default function Navbar() {
               Menu
             </button>
             <a
-              href="/src/assets/resume.pdf"
+              href="/resume.pdf"
               download="Shlok_Shah_Resume.pdf"
               className="btn-accent text-xs uppercase tracking-[0.2em] magnetic"
             >
@@ -70,3 +71,4 @@ export default function Navbar() {
     </motion.nav>
   );
 }
+

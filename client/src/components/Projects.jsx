@@ -101,7 +101,7 @@ export default function Projects() {
               onClick={() => setActiveIndex(index)}
               aria-label={`Open ${project.title}`}
             >
-              <img src={project.image} alt={project.title} className="stack-card-image" loading="lazy" />
+              <img src={project.image} alt={project.title} className="stack-card-image" loading="lazy" decoding="async" />
             </motion.button>
           ))}
         </div>

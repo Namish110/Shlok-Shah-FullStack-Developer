@@ -25,7 +25,7 @@ export default function ClientReview() {
           transition={{ duration: 0.45, delay: 0.08 }}
           className="media-frame media-glow client-review-media"
         >
-          <img src={clientReviewImg} alt="Client review screenshot" className="tilt-media" />
+          <img src={clientReviewImg} alt="Client review screenshot" className="tilt-media" loading="lazy" decoding="async" />
         </motion.div>
       </div>
     </section>

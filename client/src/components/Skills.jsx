@@ -43,7 +43,7 @@ export default function Skills() {
                 transition={{ duration: 0.4, delay: i * 0.03 }}
               >
                 <div className="stack-icon">
-                  <img src={skill.icon} alt={skill.name} />
+                  <img src={skill.icon} alt={skill.name} loading="lazy" decoding="async" />
                 </div>
                 <span className="stack-label">{skill.name}</span>
               </motion.button>
